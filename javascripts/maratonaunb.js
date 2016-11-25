@@ -34,7 +34,7 @@ function header() {
 	write_menu_item('informacoes.html', 'Informações')
 	write_menu_item('http://icpc.baylor.edu/', 'ICPC')
 	write_menu_item('http://maratona.ime.usp.br/', 'IME')
-	write_menu_item('maratonaunb.html', 'UnB')
+	write_menu_item('unb.html', 'UnB')
 	write_menu_item('https://www.facebook.com/maratonaunb/', '<img src=\"images/icons/facebook.png\" width=\"15\" height=\"15\">')
 	document.write('                  </ul>\n')
 	document.write('              </div>\n')
