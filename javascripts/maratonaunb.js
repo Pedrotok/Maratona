@@ -46,6 +46,7 @@ function header(dir_depth=0) {
 	top_menu_item('http://maratona.ime.usp.br/', 'IME')
 	top_menu_item(rel_path + 'unb.html', 'UnB')
 	top_menu_item('https://www.facebook.com/maratonaunb/', '<img src=\"' + rel_path + 'images/icons/facebook.png\" width=\"15\" height=\"15\">')
+	https://icpc.baylor.edu/img/icpc_gr.png
 	document.write('                  </ul>\n')
 	document.write('              </div>\n')
 	document.write('          </nav>\n')
