@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+      <html>
+      <head>
+          <meta charset="utf-8" />
+          <title>Resultados da Maratona de Programação UnB 2016</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <!-- A ordem aqui é importante! -->
+          <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+          <style type="text/css" media="all">@import "../../stylesheets/maratonaunb.css";</style>
+          <script src="../../javascripts/maratonaunb.js"></script>
+          <style type="text/css">
+          .etapa {display:none;}
+          .w3-hover-cic:hover{color:#fff!important;background-color:var(--footer-bg-color)!important;}
+          .w3-cic-select{color:#fff!important;background-color:var(--footer-bg-color)!important;}
+          </style>
+          <script type="text/javascript">
+          function w3_result(etapa) {
+            // Define o conjunto de informações de uma etapa da Competição como "aba" no estilo w3.
+            // http://www.w3schools.com/w3css/w3css_tabulators.asp
+
+            document.write('<div id=\"' + etapa + '\" class="w3-container w3-border etapa">\n')
+            document.write('  <h2>' + etapa + '</h2>\n')
+            document.write('  <p>\n')
+            document.write('   <ul>\n')
+            document.write('    <li><a href=\"' + etapa + '/fotos.html">Fotos</a></li>\n')
+            document.write('    <li><a href=\"' + etapa + '/placar.pdf">Placar</a></li>\n')
+            document.write('    <li><a href=\"' + etapa + '/prova.pdf">Problemas da Competição</a></li>\n')
+            document.write('    <li><a href="' + etapa + '/boca.zip">Testes da Competição</a></li>\n')
+            document.write('  </ul>\n')
+            document.write('  </p>\n')
+            document.write('</div>\n')
+          }
+          </script>
+      </head>
+      <body class="slideshow">
+      <script type="text/javascript">header(2);</script>
+      <div id="content-container" style="padding-top: 100px !important;">
+          <div id="content" class="clearfix">
+              <div id="main-content" class="no-sidebar">
+                <article class="static-page">
+                <!--Edite a partir daqui -->
+                 <div class="w3-container">
+                  <ul class="w3-navbar w3-cic">
+                    <li><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Maratona')">Maratona</a></li>
+                    <li><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Laser')">Laser</a></li>
+                    <li><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Star')">Star</a></li>
+                    <li><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Tornado')">Tornado</a></li>
+                  </ul>
+
+                  <script type="text/javascript">
+                    w3_result('Maratona');
+                    w3_result('Laser');
+                    w3_result('Star');
+                    w3_result('Tornado');
+                  </script>
+                  </div>
+
+                  <script type="text/javascript">
+                  openCity('', "Maratona")
+                  function openCity(evt, etapaName) {
+                      var i, x, tablinks;
+                      x = document.getElementsByClassName("etapa");
+                      for (i = 0; i < x.length; i++) {
+                          x[i].style.display = "none";
+                      }
+                      tablinks = document.getElementsByClassName("tablink");
+                      for (i = 0; i < x.length; i++) {
+                          tablinks[i].className = tablinks[i].className.replace(" w3-cic-select", "");
+                      }
+                      document.getElementById(etapaName).style.display = "block";
+                      evt.currentTarget.className += " w3-cic-select";
+                  }
+                  </script>
+                <!--Fim da área de Edição -->
+                </article>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">footer(2);</script>
+</body>
+</html>
