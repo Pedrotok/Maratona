@@ -33,7 +33,7 @@ function header(dir_depth=0) {
 	document.write('      <header id=\"main-header\" class=\"clearfix small\">\n')
 	document.write('          <div id=\"header-full\" class=\"clearfix small\">\n')
 	document.write('              <div id=\"header\" class=\"clearfix\">\n')
-	document.write('                  <a href=\"http://cic.unb.br\" target=\"_self\" id=\"logo\"><img src=\"/images/UnB/CIC.png\" alt=\"Departamento de Ciência da Computação\" /></a>\n')
+	document.write('                  <a href=\"http://cic.unb.br\" target=\"_self\" id=\"logo\"><img src=\"' + rel_path + 'images/UnB/CIC.png\" alt=\"Departamento de Ciência da Computação\" /></a>\n')
 	document.write('                  <aside id=\"header-content\">a</aside>\n')
 	document.write('              </div>\n')
 	document.write('          </div>\n')
